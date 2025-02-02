@@ -6,6 +6,7 @@ import Box from './Box'
 import Questions from './Questions'
 import Getstarted from './Getstarted'
 import Footer from './Footer'
+import TrendingNow from './TrendingNow'
 
 function Hero() {
     return (
@@ -31,9 +32,10 @@ function Hero() {
         </div> */}
             </div>
             <div className='px-40'>
+
+                    <TrendingNow/>
                 <Box />
                 <Questions/>
-
                 <p className='mt-16 text-center text-[1rem] font-[500]'>Ready to watch? Enter your email to create or restart your membership.</p>
                 <Getstarted/>
                 <Footer/>

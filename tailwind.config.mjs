@@ -11,7 +11,12 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      textStrokeWidth: {
+        sm: '1px',
+        DEFAULT: '2px',
+        lg: '3px',
+      },
     },
   },
-  plugins: [],
+  plugins: [require('tailwind-scrollbar-hide')],
 };

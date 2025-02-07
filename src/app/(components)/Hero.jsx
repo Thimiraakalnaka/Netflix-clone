@@ -23,22 +23,26 @@ function Hero() {
                     <p className='text-[1.25rem] font-[500] mb-8'>Starts at USD 2.99. Cancel anytime.</p>
                     <p className='text-[1rem] leading-relaxed font-[400]'>Ready to watch? Enter your email to create or restart your membership</p>
 
-                    <Getstarted/>
+                    <Getstarted />
                 </div>
-                {/* <div className='bg-gradient-to-r from-[#b82869] via-[#e50914] to-[#b82869] h-[10%] relative text-[1.5rem] font-[500] px-20'>
-        </div>
-        <div className='bg-black'>
-                <h1>Trending Now</h1>
-        </div> */}
-            </div>
-            <div className='px-40'>
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 overflow-hidden w-full h-[96px]">
+                    <div className="absolute bg-gradient-to-r from-[#b82869] via-[#e50914] to-[#b82869] h-[96px] w-[130%] left-[-15%] rounded-tl-[50%_100%] rounded-tr-[50%_100%]">
+                    <div className="absolute bottom-0 left-0 w-full h-[92px] bg-black z-10  rounded-tl-[50%_100%] rounded-tr-[50%_100%]"></div>
+                    {/* <div className="absolute bottom-0 left-0 w-full h-[92px] bg-custom-radial  z-10  rounded-tl-[50%_100%] rounded-tr-[50%_100%]"></div> */}
+                    </div>
+                    
+                </div>
 
-                    <TrendingNow/>
+
+            </div>
+
+            <div className='px-40'>
+                <TrendingNow />
                 <Box />
-                <Questions/>
+                <Questions />
                 <p className='mt-16 text-center text-[1rem] font-[500]'>Ready to watch? Enter your email to create or restart your membership.</p>
-                <Getstarted/>
-                <Footer/>
+                <Getstarted />
+                <Footer />
             </div>
         </div>
     )

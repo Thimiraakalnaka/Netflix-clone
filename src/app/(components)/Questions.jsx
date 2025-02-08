@@ -51,23 +51,23 @@ function Questions() {
 
     return (
         <div className='mt-14'>
-            <h1 className='text-[1.5rem] font-[700] mb-3'>Frequently Asked Questions</h1>
+            <h1 className='text-[1.125rem] md:text-[1.5rem] font-[700] mb-3'>Frequently Asked Questions</h1>
             <ul>
                 <li>
 
                     {contents.map((content, index) => {
                         return (
                             <>
-                                <div className='flex justify-between bg-[#2d2d2d] p-6 mt-3' onClick={() => handlebutton(index)} key={content.id}>
+                                <div className='flex justify-between bg-[#2d2d2d] p-6 mt-2 md:mt-3' onClick={() => handlebutton(index)} key={content.id}>
 
-                                    <div className='text-[1.5rem] font-[500]'>
+                                    <div className='text-[1.125rem] md:text-[1.5rem] font-[500]'>
                                         {content.question}
                                     </div>
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" width="36" height="36" data-icon="PlusLarge" aria-hidden="true" ><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 36 36" className='w-5 h-5 md:w-9 md:h-9' data-icon="PlusLarge" aria-hidden="true" ><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor"></path></svg>
                                     </div>
                                 </div>
-                                {isClicked == true && (openIndex == index ? <div className='mt-1 bg-[#2d2d2d] text-[1.5rem] font-[500] p-6'>
+                                {isClicked == true && (openIndex == index ? <div className='mt-1 bg-[#2d2d2d] text-[1.125rem] md:text-[1.5rem] font-[500] p-6'>
                                     <p className='mb-6'></p>
                                     <p>{content.answer}</p>
                                 </div> : null)

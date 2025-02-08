@@ -24,14 +24,14 @@ export default function Modal({ open, setOpen, film }) {
                   <div>
                     <div >
                       <Image src={film.url2} alt={film.description || "Image"} width={667} height={365} className='relative bg-cover bg-center w-full' />
-                      <Image src={film.url3} alt={film.description || "title"} width={350} height={66} className='absolute top-[271px] p-10 z-10 w-[60%] h-auto' />
-                      <div className='absolute top-0 left-0 bg-gradient-to-t from-[#161616] via-transparent to-transparent w-full h-[365px]'></div>
-                      <div className='absolute top-0 left-0 bg-gradient-to-tr from-[#161616] from-30% via-[#161616] via-20% to-transparent to-60%   w-full h-[365px]'></div>
+                      <Image src={film.url3} alt={film.description || "title"} width={350} height={66} className='absolute top-[80px] p-10 z-10 w-[60%] h-auto' />
+                      <div className='absolute top-[82px] md:top-0 left-0 bg-gradient-to-t from-[#161616] via-transparent to-transparent w-full h-[100px] md:h-[365px]'></div>
+                      <div className='absolute top-[82px] md:top-0 left-0 bg-gradient-to-tr from-[#161616] from-30% via-[#161616] via-20% to-transparent to-60%   w-full h-[100px] md:h-[365px]'></div>
                       <div className='absolute top-5 right-5 cursor-pointer hover:bg-slate-500 p-1 rounded-full' onClick={()=>setOpen(false)}>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" role="img" viewBox="0 0 24 24" width="24" height="24" data-icon="XStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5858 12L2.29291 3.70706L3.70712 2.29285L12 10.5857L20.2929 2.29285L21.7071 3.70706L13.4142 12L21.7071 20.2928L20.2929 21.7071L12 13.4142L3.70712 21.7071L2.29291 20.2928L10.5858 12Z" fill="currentColor"></path></svg>
                       </div>
                     </div>
-                    <div className='px-10 pb-10 pt-4 '>
+                    <div className='px-4 md:px-10 pb-10 pt-4 '>
                       <div className='flex'>
                         {film.category.map((cat) => {
                           return (
@@ -41,8 +41,8 @@ export default function Modal({ open, setOpen, film }) {
                           )
                         })}
                       </div>
-                      <h1 className='pt-4'>{film.description}</h1>
-                      <button className='flex bg-[#e50914] text-[1.5rem] font-medium p-2 rounded ml-1 justify-center items-center w-40 mt-10'>
+                      <h1 className='pt-4 text-[0.875rem]'>{film.description}</h1>
+                      <button className='flex bg-[#e50914] md-[1rem] md:text-[1.5rem] font-medium p-2 rounded ml-1 justify-center items-center w-full md:w-40 mt-10'>
                         <span>Get Started</span>
                         <svg className='w-5 h-5 text-white fill-current' role="img" viewBox="0 0 24 24" data-icon="ChevronRightStandard" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" ></path></svg>
                       </button>

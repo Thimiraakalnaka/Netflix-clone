@@ -11,18 +11,17 @@ import TrendingNow from './TrendingNow'
 function Hero() {
     return (
         <div>
-            <div className='relative bg-[url(https://assets.nflxext.com/ffe/siteui/vlv3/fb5cb900-0cb6-4728-beb5-579b9af98fdd/web/LK-en-20250127-TRIFECTA-perspective_1d8db1fc-8ee8-4390-b420-6e3c24a85b53_large.jpg)] h-[115vh] bg-cover bg-center'>
+            <div className='relative bg-[url(https://assets.nflxext.com/ffe/siteui/vlv3/fb5cb900-0cb6-4728-beb5-579b9af98fdd/web/LK-en-20250127-TRIFECTA-perspective_1d8db1fc-8ee8-4390-b420-6e3c24a85b53_large.jpg)] h-[95vh] md:h-[115vh] bg-cover bg-center'>
                 <div className='absolute bg-gradient-to-b from-black/90 via-black/50 to-black/90 top-0 left-0 bottom-0 right-0'></div>
 
-                <div className='flex justify-between z-10 relative py-6 px-36'>
+                <div className='flex justify-between z-10 relative py-6 px-6 md:px-36'>
                     <NetflixLogo />
                     <SigninButton />
                 </div>
-                <div className='z-10 relative flex flex-col text-center px-8 justify-center items-center w-[65%] max-w-[800px] h-[100vh] m-auto'>
-                    <h1 className='text-[3.5rem] font-[900] leading-[1.25] max-w-screen-sm mb-4'>Unlimited movies, TV shows, and more</h1>
-                    <p className='text-[1.25rem] font-[500] mb-8'>Starts at USD 2.99. Cancel anytime.</p>
+                <div className='z-10 relative flex flex-col text-center px-8 justify-center items-center w-[100%] md:w-[65%] max-w-[800px] h-[80vh] md:h-[100vh] m-auto'>
+                    <h1 className='text-[2rem] font-[700] md:text-[3.5rem] md:font-[900] leading-[1.25] max-w-screen-sm mb-2 md:mb-4'>Unlimited movies, TV shows, and more</h1>
+                    <p className='text-[1rem] md:text-[1.25rem] font-[500] mb-4 md:mb-8'>Starts at USD 2.99. Cancel anytime.</p>
                     <p className='text-[1rem] leading-relaxed font-[400]'>Ready to watch? Enter your email to create or restart your membership</p>
-
                     <Getstarted />
                 </div>
                 <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 overflow-hidden w-full h-[96px]">
@@ -36,11 +35,11 @@ function Hero() {
 
             </div>
 
-            <div className='px-40'>
+            <div className='px-[1.5rem] md:px-40'>
                 <TrendingNow />
                 <Box />
                 <Questions />
-                <p className='mt-16 text-center text-[1rem] font-[500]'>Ready to watch? Enter your email to create or restart your membership.</p>
+                <p className='mt-16 text-left md:text-center text-[1rem] font-[500]'>Ready to watch? Enter your email to create or restart your membership.</p>
                 <Getstarted />
                 <Footer />
             </div>

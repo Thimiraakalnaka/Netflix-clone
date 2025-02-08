@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className='mt-16 mb-20'>
       <Link href="#" className='underline opacity-70'>Questions? Contact us.</Link>
-      <ul className='grid grid-cols-4 my-10 leading-8'>
+      <ul className='grid grid-cols-1 md:grid-cols-4 my-10 leading-8'>
         <li>
           <Link href="#" className='underline opacity-70'>FAQ</Link>
         </li>
